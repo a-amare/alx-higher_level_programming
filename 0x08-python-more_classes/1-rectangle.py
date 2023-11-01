@@ -6,10 +6,20 @@
 class Rectangle:
     """ Rectangle dimensions length and width """
 
-    def __init__(self, width=0, length=0):
+    def __init__(self, width=0, height=0):
         """ instatiates length and width with zero """
+        if not isinstance(width, int):
+            raise TypeError("height must be an integer")
+        if width < 0:
+            raise ValueError("height must be >= 0")
+
         self._width = width
-        self._length = length
+
+        if not isinstance(height, int):
+            raise TypeError("height must be an integer")
+        if height < 0:
+            raise ValueError("height must be >= 0")
+        self._height = height
 
     def width(self):
         """ gets width variable"""
@@ -17,7 +27,7 @@ class Rectangle:
 
     def length(self):
         """gets length of rectangle variable """
-        print(self._length)
+        print(self._height)
 
     def height(self, value):
         """ sets height value """
