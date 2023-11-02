@@ -58,3 +58,5 @@ class Rectangle:
         if (self.__width == 0 or self.__height == 0):
             return (0)
         return (2 * (self.__height + self.__width))
+
+    # just a randm comment
