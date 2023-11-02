@@ -3,9 +3,6 @@
 """ Rectangle Class with attributes"""
 
 
-from typing import Type
-
-
 class Rectangle:
     """ Rectangle with init """
 
